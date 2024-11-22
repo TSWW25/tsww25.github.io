@@ -13,10 +13,7 @@
     <![endif]-->
   </head>
   <body>
-    <!-- Include header -->
-    <div>
-      <!--#include file="header.html" -->
-    </div>
+    <div id="header"></div>
 
     <section>
       <h1>Organisers</h1>
@@ -28,11 +25,12 @@
       </ul>
     </section>
 
-    <!-- Include footer -->
-    <div>
-      <!--#include file="footer.html" -->
-    </div>
+    <div id="footer"></div>
 
     <script src="javascripts/scale.fix.js"></script>
+    <script>
+      document.getElementById("header").innerHTML='<object type="text/html" data="header.html" ></object>';
+      document.getElementById("footer").innerHTML='<object type="text/html" data="footer.html" ></object>';
+    </script>
   </body>
 </html>
