@@ -170,30 +170,29 @@ header ul a strong {
 } */
 
 header ul {
-  list-style: none; /* Keep this to remove default bullet points */
-  padding: 0; /* Remove padding for clean alignment */
-  margin: 0; /* Add margin reset */
-  display: flex; /* Align items in a row */
-  gap: 15px; /* Add spacing between list items */
-  background: none; /* Remove background color */
-  border: none; /* Remove border */
+  list-style: disc; /* Use default bullet points */
+  padding-left: 20px; /* Add padding for proper indentation */
+  margin: 0; /* Reset margin */
+  display: block; /* Ensure the list is vertical */
+  background: none; /* Remove background */
+  border: none; /* Remove borders */
 }
 
 header li {
   float: none; /* Remove floating */
   border: none; /* Remove borders */
   width: auto; /* Allow natural width based on content */
+  margin-bottom: 10px; /* Add spacing between items */
 }
 
 header ul a {
-  font-size: 14px; /* Slightly larger font for readability */
-  color: #222; /* Use darker color for better visibility */
+  font-size: 14px; /* Maintain readable font size */
+  color: #222; /* Use a dark color for visibility */
   text-decoration: none; /* Remove underlines */
-  padding: 0; /* Remove padding for a simpler look */
 }
 
 header ul a:hover {
-  color: #007acc; /* Change color on hover to enhance interactivity */
+  color: #007acc; /* Add a hover color for interactivity */
 }
 
 header ul a:active {
