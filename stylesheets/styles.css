@@ -187,12 +187,13 @@ header li {
 
 header ul a {
   font-size: 14px; /* Maintain readable font size */
-  color: #222; /* Use a dark color for visibility */
+  color: #007acc;
   text-decoration: none; /* Remove underlines */
 }
 
 header ul a:hover {
   color: #007acc; /* Add a hover color for interactivity */
+  font-weight: bold; /* Bold text on hover */
 }
 
 header ul a:active {
