@@ -230,6 +230,23 @@ footer {
   -webkit-font-smoothing:subpixel-antialiased;
 }
 
+.speaker {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.speaker img {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.speaker .info {
+  flex: 1;
+}
+
 @media print, screen and (max-width: 960px) {
 
   div.wrapper {
