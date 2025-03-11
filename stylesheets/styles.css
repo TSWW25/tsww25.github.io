@@ -254,7 +254,6 @@ footer {
   border-radius: 5%;
   margin-right: 20px;
   margin-bottom: 10px;
-  margin-top: 20px;
 }
 
 .speaker .speaker-text {
@@ -348,3 +347,12 @@ footer {
   }
 }
 
+/* Adjust footer on smaller screens to prevent overlapping */
+@media screen and (max-width: 960px) {
+  footer {
+    position: static;
+    width: auto;
+    margin-top: 20px;
+    text-align: center;
+  }
+}
