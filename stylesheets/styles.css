@@ -230,29 +230,45 @@ footer {
   -webkit-font-smoothing:subpixel-antialiased;
 }
 
+/* Keynote Speakers Section */
 .speaker {
-  display: flex;
-  align-items: center;
-  gap: 20px;
   margin-bottom: 40px;
+  clear: both;
 }
 
-/* .speaker img {
-  width: 150px;
-  height: auto;
-  border-radius: 8px;
-} */
+.speaker-header {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.speaker-header h2 {
+  margin: 0 0 10px;
+}
 
 .speaker-img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
+  display: block;
+  width: 200px;  /* Increased size for better visibility */
+  height: auto;
+  border-radius: 50%; /* Circular image */
+  margin-bottom: 10px;
 }
 
-.speaker .info {
-  flex: 1;
+/* Layout for speaker text alongside the image */
+.speaker .speaker-text {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 20px;
+  max-width: calc(100% - 240px); /* Adjusting for image width and margin */
 }
+
+@media screen and (max-width: 720px) {
+  .speaker .speaker-text {
+    display: block;
+    margin-left: 0;
+    max-width: 100%;
+  }
+}
+
 
 @media print, screen and (max-width: 960px) {
 
