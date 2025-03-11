@@ -251,9 +251,10 @@ footer {
   float: left; /* Float the image to the left */
   width: 200px;  /* Increased size for better visibility */
   height: auto;
-  border-radius: 50%; /* Circular image */
+  border-radius: 5%;
   margin-right: 20px;
   margin-bottom: 10px;
+  margin-top: 20px;
 }
 
 .speaker .speaker-text {
