@@ -237,10 +237,17 @@ footer {
   margin-bottom: 40px;
 }
 
-.speaker img {
+/* .speaker img {
   width: 150px;
   height: auto;
   border-radius: 8px;
+} */
+
+.speaker-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .speaker .info {
