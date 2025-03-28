@@ -223,11 +223,11 @@ hr {
 }
 
 footer {
-  width:270px;
-  float:left;
-  position:fixed;
-  bottom:50px;
-  -webkit-font-smoothing:subpixel-antialiased;
+  clear: both;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 
 /* Keynote Speakers Section */
@@ -344,15 +344,5 @@ footer {
     padding:0.4in;
     font-size:12pt;
     color:#444;
-  }
-}
-
-/* Adjust footer on smaller screens to prevent overlapping */
-@media screen and (max-width: 960px) {
-  footer {
-    position: static;
-    width: auto;
-    margin-top: 20px;
-    text-align: center;
   }
 }
