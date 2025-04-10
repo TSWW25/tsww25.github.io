@@ -1,9 +1,14 @@
 body {
-  background-color: #fff;
+  background-color: #435a80;
   padding:50px;
-  font: 14px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font: 14px/1.5  "Poppins", sans-serif;
   color:#595959;
   font-weight:400;
+  font-family: "Poppins", sans-serif;
+}
+header, section{
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -34,13 +39,19 @@ h3, h4, h5, h6 {
   font-weight: 500;
 }
 
+#nav-list{
+  list-style-type: none;
+  padding: 0px;
+  font-size: 17px;
+}
+
 a {
-  color:#39c;
+  color:#000cae;
   text-decoration:none;
 }
 
 a:hover {
-  color:#069;
+  color:#435a80;
 }
 
 a small {
@@ -54,9 +65,26 @@ a:hover small {
   color:#777;
 }
 
+.nav-item{
+  color: #000cae;
+}
+
+.active{
+  border-bottom: 1px solid #ffd700;
+  font-weight: 600;
+}
+.nav-item:hover{
+  color: #000cae;
+  border-bottom: 1px solid #ffd700;
+}
+
 .wrapper {
-  width:860px;
+  width: 860px;
   margin:0 auto;
+  background:white;
+  height: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 blockquote {
@@ -79,6 +107,10 @@ pre {
   overflow-x: auto;
 }
 
+#logo{
+  max-width: 60%;
+}
+
 table {
   width:100%;
   border-collapse:collapse;
@@ -96,7 +128,12 @@ dt {
 }
 
 th {
-  color:#444;
+  background-color: #0c0053;
+  color:#fff;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #d1d1d1;
 }
 
 img {
@@ -104,10 +141,15 @@ img {
 }
 
 header {
-  width:270px;
+  width: 14vw;
   float:left;
   position:fixed;
   -webkit-font-smoothing:subpixel-antialiased;
+}
+
+#organisers h2, .speaker-header h2, #cfp-section h2, #home-section h2{
+  color: #000cae;
+  border-bottom: 1px solid #ffd700;
 }
 
 /* header ul {
@@ -206,7 +248,9 @@ header ul li:last-child a {
 }
 
 section {
-  width:500px;
+  border-left: 1px solid #435a80;
+  padding-left: 10px;
+  width: 30vw;
   float:right;
   padding-bottom:50px;
 }
@@ -224,8 +268,6 @@ hr {
 
 footer {
   clear: both;
-  width: 100%;
-  padding: 20px 0;
   text-align: right;
   -webkit-font-smoothing: subpixel-antialiased;
 }
@@ -305,6 +347,10 @@ footer {
     right:50px;
     top:52px;
   }
+}
+
+.hosted-text{
+  text-align: right;
 }
 
 @media print, screen and (max-width: 720px) {
